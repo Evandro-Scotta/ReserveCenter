@@ -1,4 +1,4 @@
-namespace ReserveCenter.Models
+namespace ReserveCenter.Models.ViewModels
 {
     public class ErrorViewModel
     {

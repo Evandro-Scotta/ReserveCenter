@@ -1,6 +1,6 @@
 using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
-using ReserveCenter.Models;
+using ReserveCenter.Models.ViewModels;
 
 namespace ReserveCenter.Controllers
 {

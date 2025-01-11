@@ -1,4 +1,9 @@
+﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.Extensions.DependencyInjection;
+using ReserveCenter.Data;
 var builder = WebApplication.CreateBuilder(args);
+builder.Services.AddDbContext<ReserveCenterContext>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("ReserveCenterContext") ?? throw new InvalidOperationException("Connection string 'ReserveCenterContext' not found.")));
 
 
 builder.Services.AddControllersWithViews();
